@@ -85,7 +85,7 @@ while True:
         explosion_vel = (explosion_vel[0], -explosion_vel[1])
 #Plane
     if explosion_pos[0] < 0 or explosion_pos[0] + explosion_image.get_width() > window_size[0]:
-        explosion_image = pygame.image.load("images\plane.jfif")
+        explosion_image = pygame.image.load("images\plane.png")
         explosion_vel = (explosion_vel[0], explosion_vel[1])
         image_changed = True
         is_plane = True
@@ -96,7 +96,7 @@ while True:
 #
 #    explosion_pos = (explosion_pos[0] + explosion_vel[0],
 #                     explosion_pos[1] + explosion_vel[1])
-#    mirrored_image = pygame.transform.flip("images\plane.jfif", False, True)
+#    mirrored_image = pygame.transform.flip("images\plane.png", False, True)
 #Explosion
     if explosion_pos[1] + explosion_image.get_height() > window_size[1]:
         explosion_image = pygame.image.load("images\explosion.png")
