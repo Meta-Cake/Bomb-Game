@@ -86,7 +86,7 @@ while True:
 #Plane
     if player_pos[0] < 0 or player_pos[0] + explosion_image.get_width() > window_size[0]:
         explosion_image = pygame.image.load("images\plane.png")
-        player_vel = (-player_vel[0], player_vel[1])
+        player_vel = (-player_vel[0], -player_vel[1])
         image_changed = True
         is_plane = True
         change_back_start_time = current_time
